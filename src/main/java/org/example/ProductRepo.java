@@ -22,4 +22,9 @@ public class ProductRepo {
         }
     }
 
+    public boolean removeProduct(String brandName) {
+        return basketballs.removeIf(product -> product.brandName() == brandName);
+
+    }
+
 }

@@ -19,5 +19,10 @@ public class Main {
 
         productRepo.displayAllProducts();
 
+        boolean isRemoved = productRepo.removeProduct("spalding");
+        System.out.println("Product spalding removed: " + isRemoved);
+
+        productRepo.displayAllProducts();
+
     }
 }
