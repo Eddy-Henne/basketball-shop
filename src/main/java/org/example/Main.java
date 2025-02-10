@@ -17,7 +17,7 @@ public class Main {
         productRepo.addProduct(bball02);
         productRepo.addProduct(bball03);
 
-        //productRepo.displayAllProducts();
+        productRepo.displayAllProducts();
 
     }
 }

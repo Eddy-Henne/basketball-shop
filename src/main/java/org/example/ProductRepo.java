@@ -12,5 +12,14 @@ public class ProductRepo {
         System.out.println("Product added: " + product.brandName());
     }
 
+    public void displayAllProducts() {
+        if (basketballs.isEmpty()){
+            System.out.println("Keine Basketbaelle gefunden");
+        } else {
+            for (Product product : basketballs) {
+                System.out.println(product);
+            }
+        }
+    }
 
 }
