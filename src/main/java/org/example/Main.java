@@ -24,5 +24,8 @@ public class Main {
 
         productRepo.displayAllProducts();
 
+        Product foundProduct = productRepo.getProduct("spalding");
+        System.out.println("Found product: " + (foundProduct != null ? foundProduct.brandName() : "Product not found"));
+
     }
 }
